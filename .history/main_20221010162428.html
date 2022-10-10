@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .column {
+            float: center;
+            padding: 5px;
+            min-width: "22vh";
+            min-height: "22vh";
+        }
+        /* Clear floats after image containers */
+        
+        .row::after {
+            content: "";
+            float: center;
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row" style=" text-align: center">
+        <div class="column" style=" text-align: center">
+
+            <img src="images/834538140450160661.png" id="i1" alt="Snow" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox1" />
+            <img src="images/834541394987057242.png" id="i2" alt="Snow" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox2" />
+            <img src="images/834535415628562442 (1).png" id="i3" alt="Snow" style=" padding: 5px">
+            <input type="checkbox" id="myCheckbox3" />
+        </div>
+    </div>
+    <br>
+    <div class="row" style=" text-align: center">
+        <div class="column" style=" text-align: center">
+            <img src="images/834541395074613248.png" id="i4" alt="Snow" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox4" />
+            <img src="images/834541395930251336.png" id="i5" alt="Snow" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox5" />
+            <img src="images/834541395749371916.png" id="i6" alt="Snow" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox6" />
+
+        </div>
+    </div>
+    <br>
+    <div class="row" style=" text-align: center">
+        <div class="column" style=" text-align: center">
+            <img src="images/834541395749371916.png" id="i7" alt="Snow" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox7" />
+            <img src="images/834535415628562442 (1).png" id="i8" alt="Snow" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox8" />
+            <img src="images/834541394987057242.png" id="i9" alt="Snow" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox9" />
+        </div>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <button onclick="check()">Check</button>
+
+    </div>
+    <script>
+        async function check() {
+            console.log("cb.checked");
+            var i1 = document.getElementsByid('i1');
+            var i2 = document.getElementsByid('i2');
+            var i3 = document.getElementsByid('i3');
+            var i4 = document.getElementsByid('i4');
+            var i5 = document.getElementsByid('i5');
+            var i6 = document.getElementsByid('i6');
+            var i7 = document.getElementsByid('i7');
+            var i8 = document.getElementsByid('i8');
+            var i9 = document.getElementsByid('i9');
+            var c1 = document.getElementsByid('myCheckbox1');
+            var c2 = document.getElementsByid('myCheckbox2');
+            var c3 = document.getElementsByid('myCheckbox3');
+            var c4 = document.getElementsByid('myCheckbox4');
+            var c5 = document.getElementsByid('myCheckbox5');
+            var c6 = document.getElementsByid('myCheckbox6');
+            var c7 = document.getElementsByid('myCheckbox7');
+            var c8 = document.getElementsByid('myCheckbox8');
+            var c9 = document.getElementsByid('myCheckbox9');
+            //const source1 = ["834535415628562442 (1).png ", "834538140450160661.png", "834541394987057242.png", "834541395074613248.png", "834541395749371916.png", "834541395930251336.png"];
+            if (c1.checked) {
+                console.log("cb.checked");
+                i1.src = 'images/834535415628562442 (1).png';
+            }
+        }
+    </script>
+</body>
+
+</html>

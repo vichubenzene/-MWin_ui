@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .column {
+            float: center;
+            padding: 5px;
+            min-width: "22vh";
+            min-height: "22vh";
+        }
+        /* Clear floats after image containers */
+        
+        .row::after {
+            content: "";
+            float: center;
+            clear: both;
+            display: table;
+        }
+        
+        .invite-button {
+            font-style: arial;
+            background-color: #d5352af6;
+            color: white;
+            border: none;
+            height: 36px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: opacity 0.4s;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
+        }
+        
+        .invite-button:hover {
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row" style=" text-align: center">
+        <div class="column" style=" text-align: center">
+            <input type="checkbox" id="myCheckbox1" />
+            <label for="myCheckbox1"><img src="images/834538140450160661.png" /></label>
+            <input type="checkbox" id="myCheckbox1" />
+            <label for="myCheckbox1"><img src="images/834541394987057242.png" /></label>
+            <input type="checkbox" id="myCheckbox1" />
+            <label for="myCheckbox1"><img src="images/834535415628562442 (1).png" /></label>
+
+        </div>
+    </div>
+    <br>
+    <div class="row" style=" text-align: center">
+        <div class="column" style=" text-align: center">
+            <input type="checkbox" id="myCheckbox1" />
+            <label for="myCheckbox1"><img src="images/834541395074613248.png" /></label>
+            <input type="checkbox" id="myCheckbox1" />
+            <label for="myCheckbox1"><img src="images/834541395749371916.png" /></label>
+            <input type="checkbox" id="myCheckbox1" />
+            <label for="myCheckbox1"><img src="images/834541395930251336.png" /></label>
+
+        </div>
+    </div>
+    <br>
+    <div class="row" style=" text-align: center">
+        <div class="column" style=" text-align: center">
+            <input type="checkbox" id="myCheckbox1" />
+            <label for="myCheckbox1"><img src="images/834541395749371916.png" /></label>
+            <input type="checkbox" id="myCheckbox1" />
+            <label for="myCheckbox1"><img src="images/834535415628562442 (1).png" /></label>
+            <input type="checkbox" id="myCheckbox1" />
+            <label for="myCheckbox1"><img src="images/834541394987057242.png" /></label>
+        </div>
+    </div>
+    <br>
+
+    <div style=" text-align: center">
+        <button class="invite-button">Check</button>
+
+    </div>
+
+</body>
+
+</html>
