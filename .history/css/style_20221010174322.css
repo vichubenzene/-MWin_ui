@@ -1,0 +1,36 @@
+.column {
+    float: center;
+    padding: 5px;
+    min-width: "10vh";
+    min-height: "10vh";
+}
+
+
+/* Clear floats after image containers */
+
+.row::after {
+    content: "";
+    float: center;
+    clear: both;
+    display: table;
+}
+
+.server-button {
+    background-color: rgb(40, 105, 227);
+    color: rgb(236, 235, 246);
+    border: none;
+    height: 36px;
+    margin-left: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
+}
+
+.server-button:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35)
+}

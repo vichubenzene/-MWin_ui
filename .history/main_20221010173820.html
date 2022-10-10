@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .column {
+            float: center;
+            padding: 5px;
+            min-width: "10vh";
+            min-height: "10vh";
+        }
+        /* Clear floats after image containers */
+        
+        .row::after {
+            content: "";
+            float: center;
+            clear: both;
+            display: table;
+        }
+        
+        .server-button {
+            background-color: rgb(40, 105, 227);
+            color: rgb(236, 235, 246);
+            border: none;
+            height: 36px;
+            margin-left: 8px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: center;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3)
+        }
+        
+        .server-button:hover {
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.35)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row" style=" text-align: center">
+        <div class="column" style=" text-align: center">
+
+            <img src="images/834538140450160661.png" id="i1" alt="Snow" onclick="image('myCheckbox1')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox1" />
+            <img src="images/834541394987057242.png" id="i2" alt="Snow" onclick="image('myCheckbox2')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox2" />
+            <img src="images/834535415628562442 (1).png" id="i3" alt="Snow" onclick="image('myCheckbox3')" style=" padding: 5px">
+            <input type="checkbox" id="myCheckbox3" />
+            <img src="images/834541394987057242.png" id="i10" alt="Snow" onclick="image('myCheckbox10')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox10" />
+        </div>
+    </div>
+    <br>
+    <div class="row" style=" text-align: center">
+        <div class="column" style=" text-align: center">
+            <img src="images/834541395074613248.png" id="i4" alt="Snow" onclick="image('myCheckbox4')" onclick="image('c5')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox4" />
+            <img src="images/881778101003120652 (1).png" id="i5" alt="Snow" onclick="image('myCheckbox5')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox5" />
+            <img src="images/834541395930251336.png" id="i6" alt="Snow" onclick="image('myCheckbox6')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox6" />
+            <img src="images/834535415628562442 (1).png" id="i11" alt="Snow" onclick="image('myCheckbox11')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox11" />
+
+        </div>
+    </div>
+    <br>
+    <div class="row" style=" text-align: center">
+        <div class="column" style=" text-align: center">
+            <img src="images/834541395749371916.png" id="i7" alt="Snow" onclick="image('myCheckbox7')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox7" />
+            <img src="images/834535415628562442 (1).png" id="i8" alt="Snow" onclick="image('myCheckbox8')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox8" />
+            <img src="images/834541395074613248.png" id="i9" alt="Snow" onclick="image('myCheckbox9')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox9" />
+            <img src="images/834541394987057242.png" id="i12" alt="Snow" onclick="image('myCheckbox12')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox12" />
+        </div>
+    </div>
+    <div class="row" style=" text-align: center">
+        <div class="column" style=" text-align: center">
+            <img src="images/834541395074613248.png" id="i13" alt="Snow" onclick="image('myCheckbox13')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox13" />
+            <img src="images/834535415628562442 (1).png" id="i14" alt="Snow" onclick="image('myCheckbox14')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox14" />
+            <img src="images/881778101003120652 (1).png" id="i15" alt="Snow" onclick="image('myCheckbox15')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox15" />
+            <img src="images/834541395074613248.png" id="i16" alt="Snow" onclick="image('myCheckbox16')" style="padding: 5px">
+            <input type="checkbox" id="myCheckbox16" />
+        </div>
+    </div>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <button onclick="check()" class="server-button">Check</button>
+
+    </div>
+    <script>
+        async function image(val) {
+            var c1 = document.getElementById(val);
+            if (c1.checked) {
+                c1.checked = false
+            } else {
+
+
+                c1.checked = true
+            }
+        }
+        async function check() {
+            var i1 = document.getElementById('i1');
+            var i2 = document.getElementById('i2');
+            var i3 = document.getElementById('i3');
+            var i4 = document.getElementById('i4');
+            var i5 = document.getElementById('i5');
+            var i6 = document.getElementById('i6');
+            var i7 = document.getElementById('i7');
+            var i8 = document.getElementById('i8');
+            var i9 = document.getElementById('i9');
+            var i10 = document.getElementById('i10');
+            var i11 = document.getElementById('i11');
+            var i12 = document.getElementById('i12');
+            var i13 = document.getElementById('i13');
+            var i14 = document.getElementById('i14');
+            var i15 = document.getElementById('i15');
+            var i16 = document.getElementById('i16');
+            var c1 = document.getElementById('myCheckbox1');
+            var c2 = document.getElementById('myCheckbox2');
+            var c3 = document.getElementById('myCheckbox3');
+            var c4 = document.getElementById('myCheckbox4');
+            var c5 = document.getElementById('myCheckbox5');
+            var c6 = document.getElementById('myCheckbox6');
+            var c7 = document.getElementById('myCheckbox7');
+            var c8 = document.getElementById('myCheckbox8');
+            var c9 = document.getElementById('myCheckbox9');
+            var c10 = document.getElementById('myCheckbox10');
+            var c11 = document.getElementById('myCheckbox11');
+            var c12 = document.getElementById('myCheckbox12');
+            var c13 = document.getElementById('myCheckbox13');
+            var c14 = document.getElementById('myCheckbox14');
+            var c15 = document.getElementById('myCheckbox15');
+            var c16 = document.getElementById('myCheckbox16');
+            const items = ["images/881778101003120652 (1).png", "images/834535415628562442 (1).png", "images/834538140450160661.png", "images/834541394987057242.png", "images/834541395074613248.png", "images/834541395749371916.png", "images/834541395930251336.png"];
+            if (c1.checked) {
+                i1.src = items[Math.floor(Math.random() * items.length)];
+                c1.checked = false
+            }
+            if (c2.checked) {
+                i2.src = items[Math.floor(Math.random() * items.length)];
+                c2.checked = false
+            }
+            if (c3.checked) {
+                i3.src = items[Math.floor(Math.random() * items.length)];
+                c3.checked = false
+            }
+            if (c4.checked) {
+                i4.src = items[Math.floor(Math.random() * items.length)];
+                c4.checked = false
+            }
+            if (c5.checked) {
+                i5.src = items[Math.floor(Math.random() * items.length)];
+                c5.checked = false
+            }
+            if (c6.checked) {
+                i6.src = items[Math.floor(Math.random() * items.length)];
+                c6.checked = false
+            }
+            if (c7.checked) {
+                i7.src = items[Math.floor(Math.random() * items.length)];
+                c7.checked = false
+            }
+            if (c8.checked) {
+                i8.src = items[Math.floor(Math.random() * items.length)];
+                c8.checked = false
+            }
+            if (c9.checked) {
+                i9.src = items[Math.floor(Math.random() * items.length)];
+                c9.checked = false
+            }
+            if (c10.checked) {
+                i10.src = items[Math.floor(Math.random() * items.length)];
+                c10.checked = false
+            }
+            if (c11.checked) {
+                i11.src = items[Math.floor(Math.random() * items.length)];
+                c11.checked = false
+            }
+            if (c12.checked) {
+                i12.src = items[Math.floor(Math.random() * items.length)];
+                c12.checked = false
+            }
+            if (c13.checked) {
+                i13.src = items[Math.floor(Math.random() * items.length)];
+                c13.checked = false
+            }
+            if (c14.checked) {
+                i14.src = items[Math.floor(Math.random() * items.length)];
+                c14.checked = false
+            }
+            if (c15.checked) {
+                i15.src = items[Math.floor(Math.random() * items.length)];
+                c15.checked = false
+            }
+            if (c16.checked) {
+                i16.src = items[Math.floor(Math.random() * items.length)];
+                c16.checked = false
+            }
+
+        }
+    </script>
+</body>
+
+</html>
